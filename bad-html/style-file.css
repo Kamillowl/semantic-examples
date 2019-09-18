@@ -22,6 +22,8 @@ a:focus {
 }
 
 .header {
+    max-width: 1200px;
+    padding: 25px 50px 210px 50px;
     background-color: white;
     border-bottom: 1px solid #f2f2f2;
     padding: 50px;
@@ -29,6 +31,47 @@ a:focus {
     justify-content: space-between;
     align-items: center;
 }
+
+.header .right-hover-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.header .right-hover-menu:hover {
+    cursor: pointer;
+}
+
+.header .right-hover-menu .menu-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    min-width: 200px;
+    border: 1px solid grey;
+    padding: 12px;
+    list-style-type: none;
+    z-index: 200;
+    background-color: white;
+}
+
+
+.header .right-hover-menu .menu-items li {
+    padding: 5px 16px;
+}
+
+.header .right-hover-menu:hover .menu-items {
+    display: inline-block;
+}
+
+.header .right-hover-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 2px;
+}
+
 .main {
     color: #2A2859;
     padding: 25px 50px 210px 50px;
@@ -39,7 +82,7 @@ a:focus {
     margin-right: auto;
 }
 .news-block a {
-    color: #2A2859;
+    color: #5d5c5c;
 }
 .main * {
     word-break: break-word;
@@ -123,7 +166,7 @@ a:focus {
 }
 
 .colorbox-yellow .color-wrapper {
-    background-color: #ff8274;
+    background-color: #f68a7e;
 }
 .colorbox-red .color-wrapper {
     background-color: #f9c66b;
