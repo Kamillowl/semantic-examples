@@ -197,7 +197,7 @@
 <body>
 <div class="header">
     <a class="tidenes-logo-link" href="https://Tidenes.kommune.no">
-        <img src="img/kommune-logo.png" height="80px" alt="Tidenes kommune logo">
+        <img src="img/kommune-logo.png" height="80px">
         <span class="logo-text-header">Tidenes</span>
     </a>
 </div>
@@ -212,15 +212,17 @@
         </a>
         <div class="moreinfo">
             <p>This is the website where you find everything you could possibly need to know about our awesome municipality.</p>
-            <h3>Want news about Tidenes?</h3>
+            <h4>Want news about Tidenes?</h4>
             <p>Tidenes Morgen is the name of our local newspaper. Do you want them to contact you about a subscription?
             </br>
             Please fill in form and submit. Tidenes Morgen will contact you.
             </p>
-            <form onsubmit="youSubmitted()">
-                <input type="email" placeholder="E-mail" />
-                <button type="submit" class="sendFormBtn">Send!</button>
-            </form>
+            <div class="newsletter-form">
+                <input type="text" placeholder="Navn" /> <br><br>
+                <input type="text" placeholder="E-mail" />  <br><br>
+                <input type="text" placeholder="Fødselsdato" />
+                <button type="submit" class="sendFormBtn" onclick="youSubmitted()">Send!</button>
+            </div>
         </div>
     </div>
     <div class="news-block" id="eventsarticle">
@@ -231,7 +233,7 @@
             <h2>Events</h2>
         </a>
         <div class="moreinfo">
-            <p>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</p>
+            <div>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</div>
         </div>
     </div>
     <div class="news-block colorbox-yellow" id="schoolsarticle">
@@ -283,7 +285,7 @@
     }
 
     function youSubmitted () {
-        console.log("Pretend you send something somewhere. After all this isn't real");
+        alert("Pretend you send something somewhere. After all this isn't real");
     }
 </script>
 </html>
