@@ -74,6 +74,11 @@
             <div class="moreinfo">
                 <p>Our school in Tidenes is pretty great. 1th to 10th grade are all gathered in our brand new school-building downtown. If you recently moved in to Tidenes, remember to fill out the <a style="font-weight: 600;">form</a> to provide your child with state of the art education facilities and equipment. Remember, children are the future, save the planet by providing your child with the best of the best education we can provide</p>
                 <p id="link">Click here to read more</p>
+                <p>Our school in Tidenes is pretty great. 1th to 10th grade are all gathered in our brand new school-building downtown.
+                    If you recently moved in to Tidenes, remember to fill out the
+                    <a style="font-weight: 600;">form</a> to provide your child with state of the art education facilities and equipment.
+                    Remember, children are the future, save the planet by providing your child with the best of the best education we can provide
+                </p>
             </div>
         </div>
         </a>
@@ -95,10 +100,27 @@
     <div class="address">
         <a href="tel:555555555">Call 555 55 555</a>
     </div>
+    <content id="subfooter" class="work-with-us">
+        <p>Vacancies</p>
+        <p>Working for us</p>
+    </content>
+    <div id="subfooter" class="social-media">
+        <img src="img/follow-instagram.svg" onclick="goToInsta()" />
+        <img src="img/follow-face.svg" onclick="goToFacebook()" />
+    </div>
 </div>
 </body>
 
 <script type="text/javascript">
+    function goToFacebook () {
+        window.location.href = "http://www.facebook.com";
+    }
+
+    function goToInsta () {
+        window.location.href = "http://www.instagram.com";
+    }
+
+
     function theFunction (elementId) {
         var element = document.getElementById(elementId);
 
