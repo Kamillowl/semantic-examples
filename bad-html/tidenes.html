@@ -22,9 +22,9 @@
 <div class="main">
     <div class="news-block" id="welcomearticle">
             <div class="image-wrapper">
-                <img  onclick="theFunction('welcomearticle');" src="img/welcomeimage.jpg" />
-            </div>
-        <a href="#welcomearticle" onclick="theFunction('welcomearticle');">
+                <img onclick="theFunction('welcomearticle');" src="img/welcomeimage.jpg" tabindex="2" />
+4            </div>
+        <a href="#welcomearticle" onclick="theFunction('welcomearticle');" tabindex="4">
             <h2>Welcome to Tidenes</h2>
         </a>
         <div class="moreinfo">
@@ -44,9 +44,9 @@
     </div>
     <div class="news-block" id="eventsarticle">
         <div class="image-wrapper">
-            <img src="img/kafka.jpg" onclick="theFunction('eventsarticle');"/>
+            <img src="img/kafka.jpg" onclick="theFunction('eventsarticle');" tabindex="6"/>
         </div>
-        <a href="#eventsarticle" onclick="theFunction('eventsarticle');">
+        <a href="#eventsarticle" onclick="theFunction('eventsarticle');" tabindex="7">
             <h2>Events</h2>
         </a>
         <div class="moreinfo">
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="news-block colorbox-yellow" id="schoolsarticle">
-        <a href="#schoolsarticle" onclick="theFunction('schoolsarticle');">
+        <a href="#schoolsarticle" onclick="theFunction('schoolsarticle');" tabindex="5">
         <div class="color-wrapper">
             <h2>Schools and education</h2>
             <div class="moreinfo">
@@ -64,7 +64,7 @@
         </a>
     </div>
     <div class="news-block colorbox-red" id="healthcarearticle">
-        <a href="#healthcarearticle" onclick="theFunction('healthcarearticle');">
+        <a href="#healthcarearticle" onclick="theFunction('healthcarearticle');" tabindex="3">
         <div class="color-wrapper">
             <h2>Healthcare</h2>
             <div class="moreinfo">
@@ -77,7 +77,7 @@
 
 <div class="footer">
     <div class="address">
-        <a href="tel:555555555">Call 555 55 555</a>
+        <a href="tel:555555555" tabindex="1">Call 555 55 555</a>
     </div>
 </div>
 </body>
