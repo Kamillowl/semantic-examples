@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tidenes kommune</title>
+
+    <style type="text/css">
+        html { height: 100%; }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+            background-color: white;
+            font-family: "Tidenes Sans Regular", "Lato", sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        a:focus {
+            outline: 0;
+        }
+
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #f2f2f2;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main {
+            color: #2A2859;
+            padding: 25px 50px 210px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .news-block a {
+            color: #2A2859;
+        }
+        .main * {
+            word-break: break-word;
+        }
+        .main h1 {
+            font-family: "Tidenes Sans Bold"
+        }
+        .footer {
+            background-color: #2A2859;
+            color: white;
+            padding: 50px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            max-height: 200px;
+        }
+        .footer a {color: white;}
+
+        .footer a:hover {
+            color: #93F5FF;
+        }
+
+        .address {
+            background-color: transparent;
+            border: 2px solid #f9c66b;
+            padding: 10px 25px;
+            display: inline;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .address a {
+            text-decoration: none;
+        }
+
+        .tidenes-logo-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text-header {
+            margin-left: 22px;
+            font-size: 2em;
+            font-family: Arial;
+            text-decoration: none;
+            color: #727272;
+            font-weight: bold;
+        }
+
+        .news-block {
+            width: 50%;
+            padding: 10px;
+        }
+
+        .news-block img {
+            max-width: 100%;
+        }
+
+        .image-wrapper {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .colorbox-yellow .color-wrapper,
+        .colorbox-red .color-wrapper {
+            position: relative;
+            height: 0;
+            padding-bottom: 56%;
+            text-align: center;
+        }
+
+        .colorbox-yellow .color-wrapper {
+            background-color: #ff8274;
+        }
+        .colorbox-red .color-wrapper {
+            background-color: #f9c66b;
+        }
+
+        .color-wrapper h2 {
+            position: absolute;
+            width: 100%;
+            top: 35%;
+        }
+
+        .news-block:not(.infocus) .moreinfo {
+            display: none;
+        }
+
+        .news-block.infocus {
+            width: 100%;
+        }
+
+        .news-block.infocus h2 {
+            position: relative;
+            margin-top: 0;
+            padding-top: 26px;
+        }
+
+        .news-block a {
+            text-decoration: none;
+        }
+
+        input {
+            font-size: 18px;
+            color: #2A2859;
+            padding: 12px;
+            min-width: 25vw;
+        }
+
+        .sendFormBtn {
+            display: block;
+            color: #2a2859;
+            border: 2px solid #2a2859;
+            padding: 15px;
+            background-color: white;
+            margin: 12px 0;
+            min-width: 120px;
+            font-size: 18px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            p{
+                font-size: 14px;
+            }
+            main, header, footer {
+                padding: 30px 12px;
+            }
+            input {
+                width: 100%;
+                border: 1px solid #2A2859;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="header">
+    <a class="tidenes-logo-link" href="https://Tidenes.kommune.no">
+        <img src="img/kommune-logo.png" height="80px" alt="Tidenes kommune logo">
+        <span class="logo-text-header">Tidenes</span>
+    </a>
+</div>
+
+<div class="main">
+    <div class="news-block" id="welcomearticle">
+            <div class="image-wrapper">
+                <img  onclick="theFunction('welcomearticle');" src="img/welcomeimage.jpg" />
+            </div>
+        <a href="#welcomearticle" onclick="theFunction('welcomearticle');">
+            <h2>Welcome to Tidenes</h2>
+        </a>
+        <div class="moreinfo">
+            <p>This is the website where you find everything you could possibly need to know about our awesome municipality.</p>
+            <h3>Want news about Tidenes?</h3>
+            <p>Tidenes Morgen is the name of our local newspaper. Do you want them to contact you about a subscription?
+            </br>
+            Please fill in form and submit. Tidenes Morgen will contact you.
+            </p>
+            <form onsubmit="youSubmitted()">
+                <input type="email" placeholder="E-mail" />
+                <button type="submit" class="sendFormBtn">Send!</button>
+            </form>
+        </div>
+    </div>
+    <div class="news-block" id="eventsarticle">
+        <div class="image-wrapper">
+            <img src="img/kafka.jpg" onclick="theFunction('eventsarticle');"/>
+        </div>
+        <a href="#eventsarticle" onclick="theFunction('eventsarticle');">
+            <h2>Events</h2>
+        </a>
+        <div class="moreinfo">
+            <p>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</p>
+        </div>
+    </div>
+    <div class="news-block colorbox-yellow" id="schoolsarticle">
+        <a href="#schoolsarticle" onclick="theFunction('schoolsarticle');">
+        <div class="color-wrapper">
+            <h2>Schools and education</h2>
+            <div class="moreinfo">
+                <p>Our school in Tidenes is pretty great. 1th to 10th grade are all gathered in our brand new school-building downtown.</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="news-block colorbox-red" id="healthcarearticle">
+        <a href="#healthcarearticle" onclick="theFunction('healthcarearticle');">
+        <div class="color-wrapper">
+            <h2>Healthcare</h2>
+            <div class="moreinfo">
+                <p>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</p>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="address">
+        <a href="tel:555555555">Call 555 55 555</a>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    function theFunction (elementId) {
+        var element = document.getElementById(elementId);
+
+        if (element.classList) {
+            element.classList.toggle("infocus");
+        } else {
+            // For IE9
+            var classes = element.className.split(" ");
+            var i = classes.indexOf("infocus");
+
+            if (i >= 0)
+                classes.splice(i, 1);
+            else
+                classes.push("infocus");
+            element.className = classes.join(" ");
+        }
+    }
+
+    function youSubmitted () {
+        console.log("Pretend you send something somewhere. After all this isn't real");
+    }
+</script>
+</html>
