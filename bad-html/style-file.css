@@ -13,6 +13,10 @@ body {
     font-family: "Tidenes Sans Regular", "Lato", sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+    cursor: default !important;
+}
+
 a:focus {
     outline: 0;
 }
