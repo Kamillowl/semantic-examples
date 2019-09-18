@@ -43,17 +43,28 @@
         </a>
         <div class="moreinfo">
             <p>This is the website where you find everything you could possibly need to know about our awesome municipality.</p>
-            <a class="h4">Want news about Tidenes?</a>
-            <p>Tidenes Morgen is the name of our local newspaper. Do you want them to contact you about a subscription?
-            </br>
-            Please fill in form and submit. Tidenes Morgen will contact you.
-            </p>
-            <div class="newsletter-form">
-                <input type="text" placeholder="Navn" /> <br><br>
-                <input type="text" placeholder="E-mail" />  <br><br>
-                <input type="text" placeholder="Fødselsdato" />
-                <button type="submit" class="sendFormBtn" onclick="youSubmitted()">Send!</button>
-            </div>
+            <table>
+                <tr>
+                    <td style="width: 50%; vertical-align: top">
+                        <a class="h4">Want news about Tidenes?</a>
+                        <p>Tidenes Morgen is the name of our local newspaper. Do you want them to contact you about a subscription?
+                        <br />
+                        <br />
+                        Please fill in the form to the right and submit.
+                        <br />
+                        Tidenes Morgen will contact you.
+                        </p>
+                    </td>
+                    <td style="text-align: center">
+                        <div class="newsletter-form">
+                            <input type="text" placeholder="Navn" /> <br><br>
+                            <input type="text" placeholder="E-mail" />  <br><br>
+                            <input type="text" placeholder="Fødselsdato" />
+                            <button type="submit" class="sendFormBtn" onclick="youSubmitted()" style="margin: auto; margin-top: 10px">Send!</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     <div class="news-block" id="eventsarticle">
