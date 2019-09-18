@@ -151,12 +151,10 @@ a:focus {
     font-family: "Tidenes Sans Bold"
 }
 .footer {
-    max-width: 1200px;
     margin: auto;
     padding: 25px 50px 25px 50px;
     background-color: #2A2859;
     color: white;
-    padding: 50px;
     position: absolute;
     left: 0;
     bottom: 0;
