@@ -317,27 +317,27 @@ input {
 
 #group-1 {
     width: 20%;
-    background-color: blanchedalmond;
+    background-color: hsl(0, 0%, 80%);
 }
 
 #group-2 {
     width: 10%;
-    background-color: #93F5FF;
+    background-color: hsl(0, 0%, 78%);
 }
 
 #group-3 {
     width: 35%;
-    background-color: #727272;
+    background-color: hsl(0, 0%, 76%);
 }
 
 #group-4 {
     width: 20%;
-    background-color: #2a2859;
+    background-color: hsl(0, 0%, 74%);
 }
 
 #group-5 {
     width: 15%;
-    background-color: hsl(38, 36%, 56%);
+    background-color: hsl(0, 0%, 72%);
 }
 
 #link:hover {
