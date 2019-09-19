@@ -36,7 +36,7 @@
 <div class="main">
     <div class="news-block" id="welcomearticle">
             <div class="image-wrapper">
-                <img  onclick="theFunction('welcomearticle');" src="img/welcomeimage.jpg" />
+                <img  onclick="theFunction('welcomearticle');" src="img/kommune-image.png" />
             </div>
         <a href="#welcomearticle" onclick="theFunction('welcomearticle');">
             <p class="h2">Welcome to Tidenes</p>
@@ -58,15 +58,27 @@
     </div>
     <div class="news-block" id="eventsarticle">
         <div class="image-wrapper">
-            <img src="img/kafka.jpg" onclick="theFunction('eventsarticle');"/>
+            <img src="img/kafka.jpg" alt="kafka.jpg" onclick="theFunction('eventsarticle');"/>
         </div>
         <a href="#eventsarticle" onclick="theFunction('eventsarticle');">
             <p class="h2">Events</p>
         </a>
         <div class="moreinfo">
-            <div>In Tidenes we have family doctors who treat patients who are without their own family doctor in Tidenes.</div>
+            <div>
+                There is a lot of cool things going on in Tidenes!
+                Tidenes festival will be held every year - and that's not all!
+                You could enjoy a cold beverage at Tidenes bryggeri, watch some art at Tidens Kunstgalleri,
+                or simply get a breakfast at our famous bakery Tidenes Morgen.
+                Click <a id="link" href="https://www.facebook.com/events/">Here</a> for a event overview.
+            </div>
         </div>
     </div>
+    <iframe width="1240" height="315" style="padding:10px;"
+            src="https://www.youtube.com/embed/I4IITZiara0?autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+    ></iframe>
     <div class="news-block colorbox-yellow" id="schoolsarticle">
         <a href="#schoolsarticle" onclick="theFunction('schoolsarticle');">
         <div class="color-wrapper">
@@ -101,11 +113,12 @@
                 <p>Tidenes has a rich diversity of inhabitants, from nature and fitness lovers to more traditional Generation Z people, with their fancy dance moves and funny pranks. Tidenes is a great place to live, as indicated by the graph below.</p>
 
                 <div id="graph-of-inhabitants">
-                    <div id="group-1"></div>
-                    <div id="group-2"></div>
-                    <div id="group-3"></div>
-                    <div id="group-4"></div>
-                    <div id="group-5"></div>
+                    <p style="width:100%">Graph displaying our diversity</p>
+                    <div title="of Kids below age 12" id="group-1"></div>
+                    <div title="Teenagers (12-17)" id="group-2"></div>
+                    <div title="Young adults (18 - 25)" id="group-3"></div>
+                    <div title="Adults (26 - 60)" id="group-4"></div>
+                    <div title="Senior citizens (61+)" id="group-5"></div>
                 </div>
             </div>
         </div>

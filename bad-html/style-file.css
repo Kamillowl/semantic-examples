@@ -266,6 +266,11 @@ a:focus {
     display: none;
 }
 
+.news-block .color-wrapper .moreinfo {
+    padding: 0 10%;
+}
+
+
 .news-block.infocus {
     width: 100%;
 }
@@ -300,10 +305,10 @@ input {
 
 #graph-of-inhabitants {
     display: flex;
+    flex-wrap: wrap;
     height: 20px;
     width: 80%;
     margin: 10%;
-    background-color: aliceblue;
 }
 
 #group-1, #group-2, #group-3, #group-4, #group-5 {
